@@ -1,0 +1,302 @@
+<html>
+<head>
+<title> Gallery - FireBird High School </title>
+<style>
+div.gallery 
+{	 
+  margin: 5px;
+  position:relative;
+  border: 1px solid #ccc;
+  float: left;
+  width: 350px;
+}	
+
+div.gallery:hover
+{	border: 1px solid #777;		}
+
+div.gallery img 
+{	width: 100%;
+  display:block;
+  height: 180px;
+}
+
+div.desc 
+{	padding: 15px;
+  text-align: center;
+  font-family:verdana;
+
+}
+ul
+{	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	list-style-type:none;
+	background-color:orange;
+}
+
+.list
+{	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	list-style-type:none;
+	background-color:orange;
+		}
+
+li
+{	float:left;
+		}
+
+li a
+{	display:block;
+	color:black;
+	font-size:20px;
+	text-align:center;
+	padding:10px 20px;
+	text-decoration:none;	}
+
+.active
+{	background-color:grey;
+	color:white;	}
+
+li a:hover
+{	background-color:grey;
+	color:white;	}
+
+.header
+{	width:100%;
+	background-color:rgb(255,165,0);	}
+.name
+{	font-size:25px;
+	font-family:verdana;
+	text-align:left;
+	padding-left:9px;
+	display:inline-block;
+}
+.one{
+	display: inline-block;
+
+}
+.img{
+	border-radius: 50%;
+}
+
+.two
+{	display:inline-block;	}
+
+.footer
+{
+    width:100%;
+    background-color: rgb(50, 12, 87);
+    color:white;
+    text-align:center;
+    font-family:'Times New Roman';
+    font-size: 20px;
+}
+
+.box
+{
+    width:400px;
+    height:300px;
+    margin:40px;
+    display:inline-block;
+}
+
+.text
+{
+    color:rgb(214, 179, 24);
+}
+
+.overlay 
+{
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.gallery:hover .overlay {
+  opacity: 1;
+}
+
+
+</style>
+</head>
+<body>
+  <div class="header">
+		<div class="one"> 
+			<img src="logo.jpeg" width="150px" height="150px" class="img" >
+		</div>
+		<div class="two">
+			<div>
+				<h2> FireBird High School </h2>
+				<h2> Rise, Emerge, Shine - Soar beyond the Horizon </h2>
+			</div>
+			<div>
+				<ul class="list">
+				<li><a href="homepage.html"> Home </a> </li>
+				<li><a href="homepage.html"> About Us </a> </li>
+				<li><a class="active" href="gallery.html"> School at a Glance </a></li>
+				<li><a href="student_portal.html"> Student Portal </a></li>
+				<li><a href="admission_enquiry.html"> Admission Enquiry</a> </li>	
+				<li><a href="achievements.html"> Achievements </a></li>
+				<li><a href="contact_us.html"> Contact Us </a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+<br>
+<table>
+  <tr>
+    <td>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="campus.jpg" alt="Campus" width="600" height="400">
+        </a>
+        <div class="desc">Campus</div> 
+      </div>
+    </td>
+
+    <td>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="classroom.jpg" alt="Class room" width="600" height="400">
+        </a>
+        <div class="desc">Classroom - Secondary grades</div>
+      </div>  
+    </td>
+
+    <td>
+      <div class="gallery">
+        <a target="_blank" >
+          <img src="classroompreprimary.jpg" alt="Class room" width="600" height="400">
+        </a>
+        <div class="desc">Classroom - Primary Grades</div>
+      </div>
+    </td>
+
+    <td>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="auditorium.jpg" alt="Auditorium" width="600" height="400">
+        </a>
+        <div class="desc">Auditorium</div>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="computerlab.jpg" alt="Computer Lab" width="600" height="400">
+        </a>
+        <div class="desc">Computer Lab</div>
+      </div>
+    </td>
+
+    <td>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="library.jpg" alt="Library" width="600" height="400">
+        </a>
+        <div class="desc">Library</div>
+      </div>
+    </td>
+
+    <td>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="chemlab.jpg" alt="Chemistry Lab" width="600" height="400">
+        </a>
+        <div class="desc">Chemistry Lab</div>
+      </div>
+    </td>
+
+    <td>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="phylab.jpg" alt="Physics Lab" width="600" height="400">
+        </a>
+        <div class="desc">Physics Lab</div>
+      </div>     
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div class="gallery">
+        <img src="biolab.jpg" alt="Biology Lab" width="600" height="400">
+        <div class="overlay"> hello </div>
+        <div class="desc">Biology Lab</div>
+      </div>
+    </td>
+
+    <td>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="artroom.jpg" alt="Art Room" width="600" height="400">
+        </a>
+        <div class="desc">Art Room</div>
+      </div>
+    </td>
+
+    <td>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="bbcourt.jpg" alt="BasketBall Court" width="600" height="400">
+        </a>
+        <div class="desc">Basket Ball Court</div>
+      </div>
+    </td>
+
+    <td>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="canteen.jpg" alt="Canteen" width="600" height="400">
+        </a>
+        <div class="desc">Canteen</div>
+      </div>
+    </td>
+  </tr>
+</table>
+<br>
+<div class="footer">
+  <div class="box">
+      <p><h2 class="text"><i>FireBird High School </i></h2>
+          was established in 2002 as the first school in Nagpur to be affliated with all 3 curriculum boards.
+          <br>
+          Our motto : <i class="text">Rise, Emerge, Shine - Soar beyond the Horizon </i> is instilled upon the hearts of our students
+      <br><br></p>
+  </div>
+  <div class="box">
+      <h2 class="text"> Get In Touch !  </h2>  
+          <ol type="none" align="left">
+              <li>Address - 30, Central Avenue, Nagpur </li><br><br>
+              <li>Contact - 9878900010</li><br><br>
+              <li>Email   - fbhscontactus@gmail.com</li>
+          </ol>
+  </div>
+  <div class="box">
+    <h2 class="text"> Newsletter </h2>
+    <form name="alertform">
+    Name : <input type="text" maxlength="20" id="name" name="fname"><br>
+    Email : <input type="email" id="mail"><br><br>
+    <input type="submit" value="Subscribe" onClick="window.alert('Hello ' + document.alertform.fname.value);"> 
+    </form>
+    <p class="text"><i>Subscribe to our newsletter and get regular updates!</i></p>
+    <p id="demo"></p>
+</div>
+</div>
+</body>
+</html>
+
+

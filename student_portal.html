@@ -1,0 +1,189 @@
+<html>
+<head>
+<title> Student_Portal - FireBird High School </title>
+<style>
+ul
+{	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	list-style-type:none;
+	background-color:orange;
+		}
+
+		.list
+{	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	list-style-type:none;
+	background-color:orange;
+		}
+
+li
+{	float:left;
+		}
+
+li a
+{	display:block;
+	color:black;
+	font-size:20px;
+	text-align:center;
+	padding:10px 20px;
+	text-decoration:none;	}
+
+.active
+{	background-color:grey;
+	color:white;	}
+
+li a:hover
+{	background-color:grey;
+	color:white;	}
+
+.header
+{	width:100%;
+	background-color:rgb(255,165,0);	}
+.name
+{	font-size:25px;
+	font-family:verdana;
+	text-align:left;
+	padding-left:9px;
+	display:inline-block;
+}
+.one{
+	display: inline-block;
+
+}
+.img{
+	border-radius: 50%;
+}
+
+.two
+{	display:inline-block;	}
+
+.bg
+{	background-image:url("portal.jpg");	
+	background-position:center;
+	background-repeat:no-repeat;
+	height:50px;
+}
+
+table
+{	text-align:center;
+	margin-top:100px;
+	margin-bottom:200px;
+	margin-left:500px;
+}
+
+.footer
+{
+    width:100%;
+    background-color: rgb(50, 12, 87);
+    color:white;
+    text-align:center;
+    font-family:'Times New Roman';
+    font-size: 20px;
+}
+
+.box
+{
+    width:400px;
+    height:300px;
+    margin:40px;
+    display:inline-block;
+}
+
+.text
+{
+    color:rgb(214, 179, 24);
+}
+
+</style>
+<script>
+	function check()
+	{
+		var a=document.getElementById("sid").value;
+		if(a=="")
+		{
+			document.getElementById("demo").innerHTML=('Error -Student Id must be filled');
+			return false;
+		}
+		var b=document.getElementById("pw").value;
+		if(b=="")
+		{
+			document.getElementById("demo").innerHTML=('Error - Password must be filled');
+			return false;
+		}
+	}
+</script>
+</head>
+<body class="bg">
+	<div class="header">
+		<div class="one"> 
+			<img src="logo.jpeg" width="150px" height="150px" class="img" >
+		</div>
+		<div class="two">
+			<div>
+				<h2> FireBird High School </h2>
+				<h2> Rise, Emerge, Shine - Soar beyond the Horizon </h2>
+			</div>
+			<div>
+				<ul class="list">
+				<li><a href="homepage.html"> Home </a> </li>
+				<li><a href="about_us.html"> About Us </a> </li>
+				<li><a href="gallery.html"> School at a Glance </a></li>
+				<li><a class="active" href="student_portal.html"> Student Portal </a></li>
+				<li><a href="admission_enquiry.html"> Admission Enquiry</a> </li>	
+				<li><a href="achievements.html"> Achievements </a></li>
+				<li><a href="contact_us.html"> Contact Us </a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<table>
+	<caption><h2> Student Portal </h2></caption>
+<form action="submit.html" onSubmit="return check()" method="post">
+<tr>	<td> Student Id: </td>
+	<td> <input type="text" name="sid" maxlength="10" size="50" id="sid"> </td>
+</tr>
+<tr>	<td> Password </td>
+	<td> <input type="password" name="pswd" maxlength="10" size="50" id="pw"></td>
+</tr>
+<tr>	<td><input type="submit" value="SUBMIT"></td>
+</tr>
+</form>
+</table>
+<p id="demo"></p>
+<br>
+
+
+<div class="footer">
+    <div class="box">
+        <p><h2 class="text"><i>FireBird High School </i></h2>
+            was established in 2002 as the first school in Nagpur to be affliated with all 3 curriculum boards.
+            <br>
+            Our motto : <i class="text">Rise, Emerge, Shine - Soar beyond the Horizon </i> is instilled upon the hearts of our students
+        <br><br></p>
+    </div>
+    <div class="box">
+        <h2 class="text"> Get In Touch !  </h2>  
+            <ol type="none" align="left">
+                <li>Address - 30, Central Avenue, Nagpur </li><br><br>
+                <li>Contact - 9878900010</li><br><br>
+                <li>Email   - fbhscontactus@gmail.com</li>
+            </ol>
+    </div>
+    <div class="box">
+        <h2 class="text"> Newsletter </h2>
+        <form name="alertform">
+        Name : <input type="text" maxlength="20" id="name" name="fname"><br>
+        Email : <input type="email" id="mail"><br><br>
+        <input type="submit" value="Subscribe" onClick="window.alert('Hello ' + document.alertform.fname.value);"> 
+        </form>
+        <p class="text"><i>Subscribe to our newsletter and get regular updates!</i></p>
+        <p id="demo"></p>
+    </div>
+</div>
+
+
+</body>
+</html>

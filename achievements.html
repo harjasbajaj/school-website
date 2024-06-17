@@ -1,0 +1,213 @@
+<html>
+<head>
+<title> Achievements - FireBird High School </title>
+<style>
+
+.list
+{	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	list-style-type:none;
+	background-color:orange;
+		}
+
+li
+{	float:left;
+		}
+
+li a
+{	display:block;
+	color:black;
+	font-size:20px;
+	text-align:center;
+	padding:10px 20px;
+	text-decoration:none;	}
+
+.active
+{	background-color:grey;
+	color:white;	}
+
+li a:hover
+{	background-color:grey;
+	color:white;	}
+
+.header
+{	width:100%;
+	background-color:rgb(255,165,0);	}
+.name
+{	font-size:25px;
+	font-family:verdana;
+	text-align:left;
+	padding-left:9px;
+	display:inline-block;
+}
+.one{
+	display: inline-block;
+
+}
+.img{
+	border-radius: 50%;
+}
+
+.two
+{	display:inline-block;	}
+
+
+div.gallery 
+{	margin:30px;
+  	border: 1px solid black;
+  	float: left;
+  	height:300px;
+	width:300px;
+}	
+
+div.gallery:hover
+{	border: 1px solid #777;		}
+
+div.gallery img 
+{	width: 100%;
+  	height: 300px;
+}
+
+div.desc 
+{	padding: 15px;
+  	text-align: center;
+  	font-family:verdana;
+
+}
+
+.container
+{
+    width:100%;
+    background-color: rgb(50, 12, 87);
+    color:white;
+    text-align:center;
+    font-family:'Times New Roman';
+    font-size: 20px;
+}
+
+.box
+{
+    width:400px;
+    height:300px;
+    margin:40px;
+    display:inline-block;
+}
+
+.text
+{
+    color:rgb(214, 179, 24);
+}
+.footer
+{
+    width:100%;
+    background-color: rgb(50, 12, 87);
+    color:white;
+    text-align:center;
+    font-family:'Times New Roman';
+    font-size: 20px;
+}
+
+.box
+{
+    width:400px;
+    height:300px;
+    margin:40px;
+    display:inline-block;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="header">
+		<div class="one"> 
+			<img src="logo.jpeg" width="150px" height="150px" class="img" >
+		</div>
+	<div class="two">
+		<div>
+		<h2> FireBird High School </h2>
+		<h2> Rise, Emerge, Shine - Soar beyond the Horizon </h2>
+		</div>
+		<div>
+		<ul class="list">
+		<li><a href="homepage.html"> Home </a> </li>
+		<li><a href="student.html"> About Us </a> </li>
+		<li><a href="gallery.html"> School at a Glance </a></li>
+		<li><a href="student_portal.html"> Student Portal </a></li>
+		<li><a href="admission_enquiry.html"> Admission Enquiry</a> </li>	
+		<li><a class="active" href="acheive,ents.html"> Achievements </a></li>
+		<li><a href="contact_us.html"> Contact Us </a></li>
+		</ul>
+		</div>
+	</div>
+</div>
+<h1 align="center"><i> Our Achievers !</i></h1>
+<table>
+	<tr>
+		<td>
+			<div class="gallery">
+				<a target="_blank"> <img src="exam_result.jpg" alt="Exam Results"></a>
+				<div class="desc"><a href="exam_result.html">Examination Results</a></div>
+			</div>
+		</td>
+			
+		<td>
+			<div class="gallery">
+				<a target="_blank"> <img src="achievements.jpg" alt="Achievements"></a>
+				<div class="desc"><a href="competition.html">Competitions and Events</a></div>
+			</div>
+		</td>
+					
+		<td>
+			<div class="gallery">
+				<a target="_blank"> <img src="olympiad.jpg" alt="Olympiad"></a>
+				<div class="desc"><a href="olympiad.html">Olympiads</a></div>
+			</div>
+		</td>
+
+		<td>
+			<div class="gallery">
+				<a target="_blank"> <img src="sports.jpg" alt="Sports"></a>
+				<div class="desc"><a href="sports.html">Sports</a></div>
+			</div>
+		</td>
+	</tr>
+</table>
+<br>
+<br>
+<br>
+
+<div class="footer">
+    <div class="box">
+        <p><h2 class="text"><i>FireBird High School </i></h2>
+            was established in 2002 as the first school in Nagpur to be affliated with all 3 curriculum boards.
+            <br>
+            Our motto : <i class="text">Rise, Emerge, Shine - Soar beyond the Horizon </i> is instilled upon the hearts of our students
+        <br><br></p>
+    </div>
+    <div class="box">
+        <h2 class="text"> Get In Touch !  </h2>  
+            <ol type="none" align="left">
+                <li>Address - 30, Central Avenue, Nagpur </li><br><br>
+                <li>Contact - 9878900010</li><br><br>
+                <li>Email   - fbhscontactus@gmail.com</li>
+            </ol>
+    </div>
+    <div class="box">
+        <h2 class="text"> Newsletter </h2>
+        <form name="alertform">
+        Name : <input type="text" maxlength="20" id="name" name="fname"><br>
+        Email : <input type="email" id="mail"><br><br>
+        <input type="submit" value="Subscribe" onClick="window.alert('Hello ' + document.alertform.fname.value);"> 
+        </form>
+        <p class="text"><i>Subscribe to our newsletter and get regular updates!</i></p>
+        <p id="demo"></p>
+    </div>
+</div>  
+
+</body>
+</html>
+
+ 

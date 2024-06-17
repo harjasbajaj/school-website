@@ -1,0 +1,142 @@
+
+<html>
+<head>
+    <title> Aboutus_FireBird High School </title>
+    <style>
+    ul {
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        list-style-type: none;
+        background-color: orange;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-family:'Times New Roman';
+    }
+
+    .active {
+        background-color: grey;
+        color: white;
+    }
+
+    li a:hover {
+        background-color: grey;
+        color: white;
+    }
+
+    .header {
+        width: 100%;
+        background-color: rgb(255, 165, 0);
+    }
+
+    .name {
+        font-size: 25px;
+        font-family:'Times New Roman';
+        text-align: left;
+        padding-left: 9px;
+        display: inline-block;
+    }
+
+    .one {
+        display: inline-block;
+    }
+
+    .img {
+        border-radius: 50%;
+    }
+
+    .two {
+        display: inline-block;
+    }
+ 
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 10px 20px;
+  background-color: inherit;
+  font-family:'Times New Roman';
+  margin: 0;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(202, 17, 17);
+  box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(202, 17, 17);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+    <div class="one">
+        <img src="logo.jpeg" width="150px" height="150px" class="img">
+    </div>
+    <div class="two">
+        <div>
+        <h2> FireBird High School </h2>
+        <h2> Rise, Emerge, Shine - Soar beyond the Horizon </h2>
+        </div>
+        <div>
+        <ul>
+            <li><a href="homepage.html"> Home </a> </li>
+            <li><a class="active" href="about_us.html"> About Us </a> </li>
+            <li><a href="faculty.html"> School at a Glance </a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Portal </button>
+                <div class="dropdown-content">
+                    
+                    <li><a href="student_portal.html"> Student Portal</a></li><br>
+                    <li><a href="parent_portal.html"> Parent Portal</a></li>
+                    
+                </div>
+            </div>
+            <li><a href="admission_enquiry.html"> Admission Enquiry </a></li>
+            <li><a href="faculty.html"> Acheivements </a></li>
+            <li><a href="contact_us.html"> Contact Us </a></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+
+    
+
+</body>
+
+</html>

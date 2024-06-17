@@ -1,0 +1,263 @@
+<html>
+<head>
+<title> Admission_FireBird High School </title>
+<style>
+ul
+{	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	list-style-type:none;
+	background-color:orange;
+		}
+
+li
+{	float:left;
+		}
+
+li a
+{	display:block;
+	color:black;
+	font-size:20px;
+	text-align:center;
+	padding:10px 20px;
+	text-decoration:none;	}
+
+.active
+{	background-color:grey;
+	color:white;	}
+
+li a:hover
+{	background-color:grey;
+	color:white;	}
+
+.header
+{	width:100%;
+	background-color:rgb(255,165,0);	}
+.name
+{	font-size:25px;
+	font-family:verdana;
+	text-align:left;
+	padding-left:9px;
+	display:inline-block;
+}
+.one{
+	display: inline-block;
+
+}
+.img{
+	border-radius: 50%;
+}
+
+.two
+{	display:inline-block;	}
+
+.container
+{
+	position:relative;
+	text-align:center;
+	color:white;
+}
+
+.top
+{
+	position:absolute;
+	top:5px;
+	left:60px;
+}
+.footer
+{
+    width:100%;
+    background-color: rgb(50, 12, 87);
+    color:white;
+    text-align:center;
+    font-family:'Times New Roman';
+    font-size: 20px;
+}
+
+.box
+{
+    width:400px;
+    height:300px;
+    margin:40px;
+    display:inline-block;
+}
+
+.text
+{
+    color:rgb(214, 179, 24);
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+<div class="one"> 
+	<img src="logo.jpeg" width="150px" height="150px" class="img" >
+</div>
+<div class="two">
+<div>
+<h2> FireBird High School </h2>
+<h2> Rise, Emerge, Shine - Soar beyond the Horizon </h2>
+</div>
+<div>
+<ul>
+<li><a href="homepage.html"> Home </a> </li>
+<li><a href="student.html"> About Us </a> </li>
+<li><a href="gallery.html"> School at a Glance </a></li>
+<li><a href="student_portal.html"> Student Portal </a></li>
+<li><a class="active" href="admission_enquiry.html"> Admission Enquiry</a> </li>	
+<li><a href="achievements.html"> Achievements </a></li>
+<li><a href="contact_us.html"> Contact Us </a></li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+
+<div class="container">
+<img src="enquiry.jpg" width="100%">
+<div class="top">
+	<marquee  width="100%" direction="right">
+		<h1>
+		Admissions for next academic year are now open! Hurry to register!
+		</h1>
+	</marquee>
+		
+		
+	<h1 align="center"> Admission Enquiry </h1>
+	<h2 align="center"style="color:white;">  Enquiries will be answered within 48 working hours!</h2>
+	
+	
+	
+	<table align="center"> 
+	<form onsubmit="return validate()" method="post" action="xyz.html">
+	<tr>
+	<td> Year </td>
+	<td> <input type="radio" name="yr" value="current"> 2022-23 
+		<input type="radio" name="yr" value="next"> 2023-24
+	</td>
+	</tr>
+	
+	<tr>
+	<td> Select Standard </td>
+	<td align="left">
+	<select name="Select Standard" size="1">
+	<option value="#">--Select--</option>
+	<option value="pg">Play Group</option>
+	<option value="kg1">Junior Kg</option>
+	<option value="kg2">Senior Kg</option>
+	<option value="junior">I-V</option>
+	<option value="senior">VI-X</option>
+	</tr>
+	</select>
+	
+	<tr>
+	<td> Parent's Name </td>
+	<td><input type="text" id="pname" maxlength=30></td>
+	</tr>
+	
+	<tr>
+	<td> Student's Name </td>
+	<td><input type="text" id="sname" maxlength=30></td>
+	</tr>
+	
+	
+	<tr>
+	<td> Contact Number </td>
+	<td> <input type="tel" id="ph" maxlength=10></td>
+	</tr>
+	
+	<tr>
+	<td> Email-id </td>
+	<td> <input type="email" id="email" maxlength=30></td>
+	</tr>
+	
+	<tr>
+	<td> Query </td>
+	<td><input type="text" id="remark" maxlength=100></td>
+	</tr>
+	
+	<tr>
+	<td colspan=2 align="center">
+	<input type="submit" value="Submit">
+	</tr>
+
+	</form>
+	</table>
+	<p id="demo"></p>
+</div>
+</div>
+<br>
+<div class="footer">
+    <div class="box">
+        <p><h2 class="text"><i>FireBird High School </i></h2>
+            was established in 2002 as the first school in Nagpur to be affliated with all 3 curriculum boards.
+            <br>
+            Our motto : <i class="text">Rise, Emerge, Shine - Soar beyond the Horizon </i> is instilled upon the hearts of our students
+        <br><br></p>
+    </div>
+    <div class="box">
+        <h2 class="text"> Get In Touch !  </h2>  
+            <ol type="none" align="left">
+                <li>Address - 30, Central Avenue, Nagpur </li><br><br>
+                <li>Contact - 9878900010</li><br><br>
+                <li>Email   - fbhscontactus@gmail.com</li>
+            </ol>
+    </div>
+    <div class="box">
+        <h2 class="text"> Newsletter </h2>
+        <form name="alertform">
+        Name : <input type="text" maxlength="20" id="name" name="fname"><br>
+        Email : <input type="email" id="mail"><br><br>
+        <input type="submit" value="Subscribe" onClick="window.alert('Hello ' + document.alertform.fname.value);"> 
+        </form>
+        <p class="text"><i>Subscribe to our newsletter and get regular updates!</i></p>
+        <p id="demo"></p>
+    </div>
+</div>
+<script>
+	function validate()
+	{
+		var a=document.getElementById("pname").value;
+		if(a=="")
+		{
+			document.getElementById("demo").innerHTML=('Error - Parent Name  must be filled');
+			return false;
+		}
+		var b=document.getElementById("sname").value;
+		if(b=="")
+		{
+			document.getElementById("demo").innerHTML=('Error - Student Name must be filled');
+			return false;
+		}
+		var c=document.getElementById("ph").value;
+		if(c=="")
+		{
+			document.getElementById("demo").innerHTML=('Error - Phone Number must be filled');
+			return false;
+		}
+		if(c.length!=10)
+		{
+			document.getElementById("demo").innerHTML=('Error - Phone Number must be 10 digit long');
+			return false;
+		}
+		var d=document.getElementById("email").value;
+		if(d=="")
+		{
+			document.getElementById("demo").innerHTML=('Error - Email must be filled');
+			return false;
+		}
+		var e=document.getElementById("remark").value;
+		if(e=="")
+		{
+			document.getElementById("demo").innerHTML=('Error - Remark must be filled');
+			return false;
+		}
+	}
+	</script>
+
+</body>
+</html>

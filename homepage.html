@@ -1,0 +1,377 @@
+<html>
+<head>
+<title> Homepage
+	 - FireBird High School </title>
+<style>
+
+.list
+{	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	list-style-type:none;
+	background-color:orange;
+		}
+
+li
+{	float:left;
+		}
+
+li a
+{	display:block;
+	color:black;
+	font-size:20px;
+	text-align:center;
+	padding:10px 20px;
+	text-decoration:none;	}
+
+.active
+{	background-color:grey;
+	color:white;	}
+
+li a:hover
+{	background-color:grey;
+	color:white;	}
+
+.header
+{	width:100%;
+	background-color:rgb(255,165,0);	}
+.name
+{	font-size:25px;
+	font-family:verdana;
+	text-align:left;
+	padding-left:9px;
+	display:inline-block;
+}
+.one{
+	display: inline-block;
+
+}
+.img{
+	border-radius: 50%;
+}
+
+.two
+{	display:inline-block;	}
+
+.slider 
+{
+	width: 500px;
+	height: 300px;
+	background-color: yellow;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	text-align: center;
+	overflow: hidden;
+	
+}
+.image-container 
+{
+	width: 1500px;
+	background-color: pink;
+	height: 300px;
+	clear: both;
+	position: relative;
+	-webkit-transition: left 2s;
+	-moz-transition: left 2s;
+	-o-transition: left 2s;
+	transition: left 2s;
+	
+}
+.slide 
+{
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+#slide-1:target ~ .image-container 
+{	left: 0px;	}
+
+#slide-2:target ~ .image-container 
+{	left: -500px;	}
+      
+#slide-3:target ~ .image-container 
+{	left: -1000px;	}
+      
+.buttons 
+{	
+	position: relative;
+    top: -20px;
+}
+
+.buttons a 
+{
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	border-radius: 50px;
+	background-color: lightgreen;
+}
+
+td
+{
+	width:700px;
+	text-align:center;
+	font-size:30px;
+	font-family: 'Cambria';
+}
+
+.title
+{
+	font-size:50px;
+	color:rgb(176, 19, 113);
+	font-family:'Trebuchet MS';
+}
+.container 
+{
+	position: relative;
+  	text-align: center;
+  	color: white;
+}
+
+.centered 
+{
+  	position: absolute;
+  	top: 50%;
+  	left: 10%;
+	right:10%;
+	font-size:80px;
+}
+
+.tag
+{
+	position: absolute;
+  	top: 65%;
+  	left: 35%;
+	right:35%;
+	font-size:30px;
+}
+.footer
+{
+    width:100%;
+    background-color: rgb(50, 12, 87);
+    color:white;
+    text-align:center;
+    font-family:'Times New Roman';
+    font-size: 20px;
+}
+
+.box
+{
+    width:400px;
+    height:300px;
+    margin:40px;
+    display:inline-block;
+}
+
+.text
+{
+    color:rgb(214, 179, 24);
+}
+
+div.gallery 
+{	align-items:center;
+    margin: 5px;
+  	float: left;
+  	width: 195px;
+    height:100px;
+}	
+
+div.gallery img 
+{	align-items:center;
+    width: 100%;
+  	height: 180px;
+}
+
+div.desc 
+{	padding: 15px;
+  	text-align: center;
+  	font-family:verdana;
+
+}
+
+.galleryheader
+{
+	width:100%;
+	height:300px;
+}
+
+.motto
+{
+	color:rgb(43, 192, 100);
+	font-size: 50px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+	<div class="one"> 
+		<img src="logo.jpeg" width="150px" height="150px" class="img" >
+	</div>
+	<div class="two">
+		<div>
+			<h2> FireBird High School </h2>
+			<h2> Rise, Emerge, Shine - Soar beyond the Horizon </h2>
+		</div>
+		<div>
+			<ul class="list">
+			<li><a class="active" href="homepage.html"> Home </a> </li>
+			<li><a href="about_us.html"> About Us </a> </li>
+			<li><a href="gallery.html"> School at a Glance </a></li>
+			<li><a href="student_portal.html"> Student Portal </a></li>
+			<li><a href="admission_enquiry.html"> Admission Enquiry</a> </li>	
+			<li><a href="achievements.html"> Achievements </a></li>
+			<li><a href="contact_us.html"> Contact Us </a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<img src="abt_img.jpg" alt="img" style="width:100%;">
+  <div class="centered">The future begins here!</div><br><br>
+  <div class="tag">Empowering students to be the change-makers of tomorrow!</div>
+</div>
+<table>
+	<tr>
+		<td><h2 class="title"> Welcome to the Best International CBSE School in the state - <br><i> FireBird High School!</i></h2></td>
+		<td><div class="slider">
+			<span id="slide-1"></span>
+			<span id="slide-2"></span>
+			<span id="slide-3"></span>
+			<div class="image-container">
+				<img src="classroom.jpg" class="slide" width="500" height="300" />
+				<img src="auditorium.jpg" class="slide" width="500" height="300" />
+				<img src="library.jpg" class="slide" width="500" height="300" />
+			</div>
+			<div class="buttons">
+				<a href="#slide-1"></a>
+				<a href="#slide-2"></a>
+				<a href="#slide-3"></a>
+			</div>
+		</div></td> 
+	</tr>
+</table>
+
+<h2><center>------ We are proud of -------</center></h2>
+<div class="galleryheader">
+<div class="gallery">
+  <a target="_blank">
+    <img src="infra.jpg">
+  </a>
+  <div class="desc">State of Art Infrastructure</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank">
+      <img src="safety.jpg">
+    </a>
+    <div class="desc">Unmatched Safety Measures</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank">
+      <img src="development.jpg">
+    </a>
+    <div class="desc">Holistic Development</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank">
+      <img src="teacher.jpg">
+    </a>
+    <div class="desc">Teacher - Student Ratio</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank">
+      <img src="boards.jpg">
+    </a>
+    <div class="desc">Choice of Education Boards</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank">
+      <img src="global.jpg">
+    </a>
+    <div class="desc">Global Curriculum</div>
+</div>
+
+<div class="gallery">
+    <a target="_blank">
+      <img src="education.jpg">
+    </a>
+    <div class="desc">Quality Education</div>
+</div>
+</div>
+
+<img src="merit.jpg" width="100%" >
+<br>
+<br>
+<br>
+<marquee>
+	<h1>
+		<i class="motto">
+		Learning - Beyond the classroom || Dreams - Freedom from Routine ||	Life - An enriching journey
+		</i>
+	</h1> 
+</marquee>
+
+<table border="5" cellspacing="0" width="70%" align="center"> 
+	<caption>
+		<h1> Our Affliations</h1>
+	</caption>
+	<tr>
+		<td>CISCE - Council for the Indian School Certificate Examination</td>
+		<td><img src="cisce.jpg" width="100px"></td>
+	</tr>
+	<tr>
+		<td> CBSE - Central Board of Secondary Education</td>
+		<td><img src="cbse.jpg" width="100px"></td>
+	</tr>
+	<tr>
+		<td> CAIE - Cambridge Assessment International Education </td>
+		<td><img src="caie.jpg" width="100px"></td>
+	</tr>
+</table>
+<br>
+<br>
+
+<div class="footer">
+    <div class="box">
+        <p><h2 class="text"><i>FireBird High School </i></h2>
+            was established in 2002 as the first school in Nagpur to be affliated with all 3 curriculum boards.
+            <br>
+            Our motto : <i class="text">Rise, Emerge, Shine - Soar beyond the Horizon </i> is instilled upon the hearts of our students
+        <br><br></p>
+    </div>
+    <div class="box">
+        <h2 class="text"> Get In Touch !  </h2>  
+            <ol type="none" align="left">
+                <li>Address - 30, Central Avenue, Nagpur </li><br><br>
+                <li>Contact - 9878900010</li><br><br>
+                <li>Email   - fbhscontactus@gmail.com</li>
+            </ol>
+    </div>
+	<div class="box">
+        <h2 class="text"> Newsletter </h2>
+        <form name="alertform">
+        Name : <input type="text" maxlength="20" id="name" name="fname"><br>
+        Email : <input type="email" id="mail"><br><br>
+        <input type="submit" value="Subscribe" onClick="window.alert('Hello ' + document.alertform.fname.value);"> 
+        </form>
+        <p class="text"><i>Subscribe to our newsletter and get regular updates!</i></p>
+        <p id="demo"></p>
+    </div>
+</div>
+
+
+
+
+	
+</body>
+</html>
+
+ 

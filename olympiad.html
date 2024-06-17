@@ -1,0 +1,165 @@
+<html>
+<head>
+<title> Olympiads - FireBird High School </title>
+<style>
+
+.list
+{	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	list-style-type:none;
+	background-color:orange;
+		}
+
+li
+{	float:left;
+		}
+
+li a
+{	display:block;
+	color:black;
+	font-size:20px;
+	text-align:center;
+	padding:10px 20px;
+	text-decoration:none;	}
+
+.active
+{	background-color:grey;
+	color:white;	}
+
+li a:hover
+{	background-color:grey;
+	color:white;	}
+
+.header
+{	width:100%;
+	background-color:rgb(255,165,0);	}
+.name
+{	font-size:25px;
+	font-family:verdana;
+	text-align:left;
+	padding-left:9px;
+	display:inline-block;
+}
+.one{
+	display: inline-block;
+
+}
+.img{
+	border-radius: 50%;
+}
+
+.two
+{	display:inline-block;	}
+
+table,th,td
+{
+	font-size:25px;
+}
+
+table
+{
+	border-style: inset;
+}
+.footer
+{
+    width:100%;
+    background-color: rgb(50, 12, 87);
+    color:white;
+    text-align:center;
+    font-family:'Times New Roman';
+    font-size: 20px;
+}
+
+.box
+{
+    width:400px;
+    height:300px;
+    margin:40px;
+    display:inline-block;
+}
+
+.text
+{
+    color:rgb(214, 179, 24);
+}
+
+</style>
+</head>
+<body>
+	<div class="header">
+		<div class="one"> 
+			<img src="logo.jpeg" width="150px" height="150px" class="img" >
+		</div>
+	<div class="two">
+		<div>
+		<h2> FireBird High School </h2>
+		<h2> Rise, Emerge, Shine - Soar beyond the Horizon </h2>
+		</div>
+		<div>
+		<ul class="list">
+		<li><a href="homepage.html"> Home </a> </li>
+		<li><a href="student.html"> About Us </a> </li>
+		<li><a href="gallery.html"> School at a Glance </a></li>
+		<li><a href="student_portal.html"> Student Portal </a></li>
+		<li><a href="admission_enquiry.html"> Admission Enquiry</a> </li>	
+		<li><a class="active" href="achievements.html"> Achievements </a></li>
+		<li><a href="contact_us.html"> Contact Us </a></li>
+		</ul>
+		</div>
+	</div>
+	</div>
+
+
+
+<br>
+<h1 align="center"><i> Our Achievers !</i></h1>
+<table width="100%">
+	<caption><h4> Olympiads - 2022</h4></caption>
+	<tr>
+	  	<td> 
+			<ul type="square">
+				<li>National Science Olympiad - NSO : 3 Gold, 4 Silver and 1 Bronze medal </li><br>
+                <li>National Cyber Olympiad - NCO : 2 Silver medals</li><br>
+                <li>International Mathematics Olympiad - IMO: 1 Gold, 11 Silver and 5 Bronze medals </li><br>
+                <li>International English Olympiad - IEO: 3 Silver and 5 Bronze medals</li>
+			</ul>
+		</td>
+		<td>
+			<img src="olympiad.jpg" width="300px" height="200px" align="right">
+		</td>
+	</tr>
+</table>
+<br>
+<br>
+<div class="footer">
+    <div class="box">
+        <p><h2 class="text"><i>FireBird High School </i></h2>
+            was established in 2002 as the first school in Nagpur to be affliated with all 3 curriculum boards.
+            <br>
+            Our motto : <i class="text">Rise, Emerge, Shine - Soar beyond the Horizon </i> is instilled upon the hearts of our students
+        <br><br></p>
+    </div>
+    <div class="box">
+        <h2 class="text"> Get In Touch !  </h2>  
+            <ol type="none" align="left">
+                <li>Address - 30, Central Avenue, Nagpur </li><br><br>
+                <li>Contact - 9878900010</li><br><br>
+                <li>Email   - fbhscontactus@gmail.com</li>
+            </ol>
+    </div>
+    <div class="box">
+        <h2 class="text"> Newsletter </h2>
+        <form name="alertform">
+        Name : <input type="text" maxlength="20" id="name" name="fname"><br>
+        Email : <input type="email" id="mail"><br><br>
+        <input type="submit" value="Subscribe" onClick="window.alert('Hello ' + document.alertform.fname.value);"> 
+        </form>
+        <p class="text"><i>Subscribe to our newsletter and get regular updates!</i></p>
+        <p id="demo"></p>
+    </div>
+</div>
+</body>
+</html>
+
+ 
